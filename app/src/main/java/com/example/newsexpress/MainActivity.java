@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     void getNews(String category, String query)
     {
         changeInProgress(true);
-        NewsApiClient newsApiClient= new NewsApiClient("88f53452511a4d529d116ff1f14be84f");
+        NewsApiClient newsApiClient= new NewsApiClient("YOUR_API_KEY");
         newsApiClient.getTopHeadlines(
           new TopHeadlinesRequest.Builder()
                   .language("en")
